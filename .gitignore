@@ -1,0 +1,9 @@
+# Ignorar carpetas de dependencias
+node_modules/
+
+# Ignorar archivos de entorno o credenciales
+.env
+main.py
+# Ignorar archivos compilados o temporales
+*.log
+dist/
