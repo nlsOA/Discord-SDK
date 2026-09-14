@@ -1,0 +1,12 @@
+{
+  "name": "rpc-config-editor",
+  "version": "1.0.0",
+  "description": "Editor web local para el config.json del Rich Presence",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

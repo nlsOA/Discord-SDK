@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel — Rich Presence</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-title">
+      <span class="dot"></span>
+      <h1>Rich Presence <span class="thin">/ panel de control</span></h1>
+    </div>
+    <div class="topbar-status" id="save-status">sin cambios</div>
+  </header>
+
+  <main class="layout">
+
+    <section class="panel panel-global">
+      <h2>Configuración general</h2>
+
+      <label class="field">
+        <span>Client ID</span>
+        <input type="text" id="client-id" placeholder="1530342268219953293" />
+      </label>
+
+      <label class="field">
+        <span>Rotar estado cada (segundos)</span>
+        <input type="number" id="intervalo" min="5" placeholder="60" />
+      </label>
+    </section>
+
+    <section class="panel panel-estados">
+      <div class="panel-header">
+        <h2>Estados</h2>
+        <button class="btn btn-add" id="btn-add-estado">+ Nuevo estado</button>
+      </div>
+
+      <div id="lista-estados" class="lista-estados">
+        <!-- las tarjetas de estado se generan acá por JS -->
+      </div>
+
+      <p class="empty-hint" id="empty-hint">Todavía no hay estados. Agregá el primero.</p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <button class="btn btn-primary" id="btn-guardar">Guardar cambios</button>
+    <span class="footer-hint">Se escribe directo en <code>config.json</code></span>
+  </footer>
+
+  <template id="tpl-estado">
+    <article class="estado-card">
+      <div class="estado-card-head">
+        <span class="estado-numero"></span>
+        <button class="btn-icon btn-borrar" title="Borrar estado">✕</button>
+      </div>
+
+      <div class="estado-grid">
+        <label class="field">
+          <span>State</span>
+          <input type="text" data-campo="state" placeholder="Chill mode" />
+        </label>
+
+        <label class="field">
+          <span>Details</span>
+          <input type="text" data-campo="details" placeholder="Programando cosas random" />
+        </label>
+
+        <label class="field">
+          <span>Large image (key)</span>
+          <input type="text" data-campo="large_image" placeholder="logo" />
+        </label>
+
+        <label class="field">
+          <span>Large text</span>
+          <input type="text" data-campo="large_text" placeholder="UTN JAM" />
+        </label>
+
+        <label class="field">
+          <span>Small image (key)</span>
+          <input type="text" data-campo="small_image" placeholder="nico" />
+        </label>
+
+        <label class="field">
+          <span>Small text</span>
+          <input type="text" data-campo="small_text" placeholder="also chill" />
+        </label>
+      </div>
+    </article>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>

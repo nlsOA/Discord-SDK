@@ -1,0 +1,22 @@
+{
+    "client_id": "1530342268219953293",
+    "intervalo_cambio": 5,
+    "estados": [
+        {
+            "state": "Let's Develop a Game",
+            "details": "THE JAM TRAINING",
+            "large_image": "logo",
+            "large_text": "UTN JAM",
+            "small_image": "noa",
+            "small_text": "NULL"
+        },
+        {
+            "state": "Chill mode",
+            "details": "MUSIC TIME 🎵",
+            "large_image": "chill",
+            "large_text": "science",
+            "small_image": "nico",
+            "small_text": "also chill"
+        }
+    ]
+}
