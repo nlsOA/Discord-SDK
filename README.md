@@ -1,7 +1,5 @@
 # Discord-SDK
- 
-Repositorio: https://github.com/nlsOA/Discord-SDK
- 
+
 ## Descripción general
  
 Herramienta para gestionar el Rich Presence de Discord (el estado que se muestra en el perfil, tipo "jugando a..."). Está dividida en dos componentes independientes que comparten un mismo archivo de configuración:
